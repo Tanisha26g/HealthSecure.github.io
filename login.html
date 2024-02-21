@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in || Sign up from</title>
+     
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+     <STYLE>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: #f0f0f0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            height: 100vh;
+        }
+
+        .form-container {
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-container {
+            margin: 20px 0;
+            a {
+                margin: 0 10px;
+                color: #333;
+                font-size: 20px;
+                text-decoration: none;
+                transition: color 0.3s;
+                &:hover {
+                    color: #4285f4;
+                }
+            }
+        }
+
+        span {
+            margin: 15px 0;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .infield {
+            position: relative;
+            margin: 15px 0;
+            input {
+                width: 100%;
+                padding: 10px;
+                border: none;
+                border-bottom: 1px solid #ccc;
+                outline: none;
+            }
+            label {
+                position: absolute;
+                top: 10px;
+                left: 0;
+                color: #999;
+                transition: transform 0.3s, font-size 0.3s;
+            }
+            input:focus + label,
+            input:not(:placeholder-shown) + label {
+                transform: translateY(-20px);
+                font-size: 12px;
+            }
+        }
+
+
+        .sign-up-container{
+            background-color: aqua;
+        }
+
+        button {
+            background: #4285f4;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+            &:hover {
+                background: #3367d6;
+            }
+        }
+
+        .forgot {
+            color: #4285f4;
+            text-decoration: none;
+            font-size: 14px;
+            margin-top: 10px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .loginfooter {
+            grid-column: span 2;
+            text-align: center;
+            margin-top: 20px;
+            a.btn {
+                background: #4285f4;
+                color: #fff;
+                padding: 10px 20px;
+                text-decoration: none;
+                font-size: 16px;
+                transition: background 0.3s;
+                &:hover {
+                    background: #3367d6;
+                }
+            }
+        }
+
+        .abc {
+            
+            
+            animation: moveBackground 5s infinite linear; /* 5s duration, infinite loop, linear timing function */
+        }
+
+        @keyframes moveBackground {
+            0% {
+                background-color: #5ba1cf; /* Start color */
+            }
+            50% {
+                background-color: #8ec0ee; /* Middle color */
+            }
+            100% {
+                background-color: #e1e3e4; /* End color */
+            }
+        }
+
+        .def {
+           
+            
+            animation: moveBackground2 5s infinite linear; /* 5s duration, infinite loop, linear timing function */
+        }
+
+        @keyframes moveBackground2 {
+            0% {
+                background-color: #5ba1cf; /* Start color */
+            }
+            50% {
+                background-color: #8ec0ee; /* Middle color */
+            }
+            100% {
+                background-color: #e1e3e4; /* End color */
+            }
+        }
+
+     </STYLE>
+
+
+</head>
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up-container def">
+            <form action="#">
+              <h1>Create Account</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <div class="infield">
+                    <input type="text" placeholder="Name" />
+                    <label></label>
+                </div>
+                <div class="infield">
+                    <input type="email" placeholder="Email" name="email"/>
+                    <label></label>
+                </div>
+                <div class="infield">
+                    <input type="password" placeholder="Password" />
+                    <label></label>
+                </div>
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container abc">
+            <form action="#">
+                <h1>Sign in</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+                <span>or use your account</span>
+                <div class="infield">
+                    <input type="email" placeholder="Email" name="email"/>
+                    <label></label>
+                </div>
+                <div class="infield">
+                    <input type="password" placeholder="Password" />
+                    <label></label>
+                </div>
+                <a href="#" class="3">Forgot your password?</a>
+                <button>Sign In</button>
+            </form>
+
+
+
+<section class="loginfooter">
+
+    <a href="home.html" class="btn">Next</a>
+
+</section>
+
+</div>
+</div>
+</body>
+</html>
